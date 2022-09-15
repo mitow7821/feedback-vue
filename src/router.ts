@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import settingsRoutes from "./views/settings/settings.routes";
-import authGuard from "./core/authGuard";
+import authGuard from "./core/guards/auth";
 
 const Map = () => import("./views/map/Map.vue");
 const Settings = () => import("./views/settings/Settings.vue");

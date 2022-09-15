@@ -7,3 +7,7 @@ declare module "vue-router" {
     requiresAuth: boolean;
   }
 }
+
+import "pinia";
+
+declare module "pinia" {}
