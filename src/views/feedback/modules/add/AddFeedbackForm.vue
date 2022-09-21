@@ -1,8 +1,8 @@
 <template>
-  <Form
+  <FormWrapper
     heading="Create New Feedback"
-    :submitHandler="handleFormSubmit"
-    submitButtonValue="Add Feedback"
+    :submit-handler="handleFormSubmit"
+    submit-button-value="Add Feedback"
   />
 </template>
 
@@ -10,7 +10,7 @@
 import { useRouter } from "vue-router";
 import { FeedbackInterface } from "../../../../core/types/interfaces/feedback.interface";
 import { useFeedbacksStore } from "../../../../shared/store/feedbacks.store";
-import Form from "../../components/Form.vue";
+import FormWrapper from "../../components/FormWrapper.vue";
 
 const router = useRouter();
 const feedbacksStore = useFeedbacksStore();

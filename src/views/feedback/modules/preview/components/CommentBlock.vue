@@ -23,7 +23,7 @@
         <ReplyBlock
           v-for="reply in comment.replies"
           :key="reply.id"
-          :parentComment="comment"
+          :parent-comment="comment"
           :reply="reply"
         />
       </div>

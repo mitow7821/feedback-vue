@@ -1,24 +1,26 @@
 <template>
   <div class="grid grid-cols-[330px,1fr] gap-5 h-full">
     <div class="flex flex-col gap-5">
-      <Gradient />
-      <Category />
-      <Status />
+      <DashboardGradient />
+      <DashboardCategory />
+      <DashboardStatus />
     </div>
 
     <div class="grow flex flex-col gap-5">
-      <Header :feedbacksNumber="dashboardStore.filteredFeedbacks.length" />
-      <List :feedbacks="dashboardStore.filteredFeedbacks" />
+      <DashboardHeader
+        :feedbacks-number="dashboardStore.filteredFeedbacks.length"
+      />
+      <DashboardList :feedbacks="dashboardStore.filteredFeedbacks" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Gradient from "./components/Gradient.vue";
-import Category from "./components/Category.vue";
-import Status from "./components/Status.vue";
-import Header from "./components/Header.vue";
-import List from "./components/List.vue";
+import DashboardGradient from "./components/DashboardGradient.vue";
+import DashboardCategory from "./components/DashboardCategory.vue";
+import DashboardStatus from "./components/DashboardStatus.vue";
+import DashboardHeader from "./components/DashboardHeader.vue";
+import DashboardList from "./components/DashboardList.vue";
 import { useDashboardStore } from "./dashboard.store";
 import { watch } from "vue";
 import { useFeedbacksStore } from "../../shared/store/feedbacks.store";

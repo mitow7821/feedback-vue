@@ -12,7 +12,7 @@
       <StatusCounter
         v-for="statusCounter in dashboardStore.statusesCounter"
         :key="statusCounter.status"
-        :statusCounter="statusCounter"
+        :status-counter="statusCounter"
       />
     </div>
   </div>

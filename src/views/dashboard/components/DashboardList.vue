@@ -4,7 +4,7 @@
       v-for="feedback in feedbacks"
       :key="feedback.id"
       :feedback="feedback"
-      :isRouterLink="true"
+      :is-router-link="true"
     />
   </div>
 </template>

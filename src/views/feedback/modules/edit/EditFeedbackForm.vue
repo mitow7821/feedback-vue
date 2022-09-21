@@ -1,10 +1,10 @@
 <template>
-  <Form
+  <FormWrapper
     heading="Edit Feedback"
-    :submitHandler="handleFormSubmit"
-    :initialFormData="editedFeedback"
-    submitButtonValue="Update Feedback"
-    @removeFeedback="removeFeedback"
+    :submit-handler="handleFormSubmit"
+    :initial-form-data="editedFeedback"
+    submit-button-value="Update Feedback"
+    @remove-feedback="removeFeedback"
   />
 </template>
 
@@ -13,7 +13,7 @@ import { onBeforeMount, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { FeedbackInterface } from "../../../../core/types/interfaces/feedback.interface";
 import { useFeedbacksStore } from "../../../../shared/store/feedbacks.store";
-import Form from "../../components/Form.vue";
+import FormWrapper from "../../components/FormWrapper.vue";
 
 const route = useRoute();
 const router = useRouter();

@@ -8,7 +8,7 @@
       <h3 class="font-semibold">{{ `${column.status} (${column.count})` }}</h3>
 
       <div class="flex flex-col gap-4 overflow-auto">
-        <Card
+        <RoadmapCard
           v-for="feedback in column.feedbacks"
           :key="feedback.id"
           :feedback="feedback"
@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { useRoadmapStore } from "../roadmap.store";
-import Card from "./Card.vue";
+import RoadmapCard from "./RoadmapCard.vue";
 
 const roadmapStore = useRoadmapStore();
 </script>

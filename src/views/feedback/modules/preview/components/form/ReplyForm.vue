@@ -1,9 +1,9 @@
 <template>
   <CommentFormWrapper
     :header="`Reply To ${comment.tag} Comment`"
-    inputPlaceholder="Type your reply here"
-    buttonText="Post Reply"
-    :showCancelButton="true"
+    input-placeholder="Type your reply here"
+    button-text="Post Reply"
+    :show-cancel-button="true"
     @submit="addReply"
     @cancel="cancelReply"
   />

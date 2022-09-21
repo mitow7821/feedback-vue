@@ -1,8 +1,8 @@
 <template>
   <CommentFormWrapper
     header="Add Comment"
-    inputPlaceholder="Type your comment here"
-    buttonText="Post Comment"
+    input-placeholder="Type your comment here"
+    button-text="Post Comment"
     @submit="addComment"
   />
 </template>

@@ -9,7 +9,7 @@
         <span class="text-gray-500">{{ reply.tag }}</span>
       </div>
 
-      <button @click="handleReply" class="text-blue-700 font-semibold text-sm">
+      <button class="text-blue-700 font-semibold text-sm" @click="handleReply">
         Reply
       </button>
     </div>

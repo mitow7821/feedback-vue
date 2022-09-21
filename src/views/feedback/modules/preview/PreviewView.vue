@@ -3,9 +3,9 @@
     v-if="feedback"
     class="max-w-[1000px] mx-auto flex flex-col gap-5 h-full overflow-hidden"
   >
-    <Header :id="feedbackId" />
+    <PreviewHeader :id="feedbackId" />
     <FeedbackCard :feedback="feedback" />
-    <Comments :comments="feedback.comments" />
+    <PreviewComments :comments="feedback.comments" />
 
     <ReplyForm
       v-if="previewStore.replyObject"
@@ -19,9 +19,9 @@
 import { onBeforeMount, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useFeedbacksStore } from "../../../../shared/store/feedbacks.store";
-import Comments from "./components/Comments.vue";
+import PreviewComments from "./components/PreviewComments.vue";
 import FeedbackCard from "../../../../shared/components/FeedbackCard.vue";
-import Header from "./components/Header.vue";
+import PreviewHeader from "./components/PreviewHeader.vue";
 import { usePreviewStore } from "./preview.store";
 import AddCommentForm from "./components/form/AddCommentForm.vue";
 import ReplyForm from "./components/form/ReplyForm.vue";

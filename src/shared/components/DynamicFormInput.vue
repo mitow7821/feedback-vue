@@ -41,7 +41,7 @@ import { DynamicInputInterface } from "../../core/types/interfaces/dynamicInput.
 
 defineProps<{
   options: DynamicInputInterface;
-  modelValue: any;
+  modelValue: unknown;
   errors: string[];
 }>();
 defineEmits(["update:modelValue"]);
