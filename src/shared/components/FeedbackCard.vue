@@ -33,7 +33,7 @@ import { Feedback } from "../../core/models/feedback.model";
 
 defineProps<{
   feedback: Feedback;
-  isRouterLink?: Boolean;
+  isRouterLink?: boolean;
 }>();
 </script>
 

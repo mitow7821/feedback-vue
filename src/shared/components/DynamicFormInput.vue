@@ -7,21 +7,21 @@
     <span class="text-gray-600">{{ options.description }}</span>
 
     <component
+      :is="options.tag"
       class="rounded p-2 bg-blue-50"
       :class="{
         'cursor-pointer': options.tag === 'select',
         'cursor-text': ['input', 'textarea'].includes(options.tag),
       }"
       v-bind="options.attrs"
-      :is="options.tag"
       :value="modelValue"
       @input="$emit('update:modelValue', ($event.target as any).value)"
     >
       <template v-if="options.tag === 'select'">
         <option
           v-for="(option, index) in options.selectOptions"
-          :value="option.value"
           :key="index"
+          :value="option.value"
         >
           {{ option.name }}
         </option>

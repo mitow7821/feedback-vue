@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-[700px] mx-auto flex flex-col gap-5 h-full overflow-hidden">
-    <button @click="$router.go(-1)" class="mr-auto">&lt; Go Back</button>
+    <button class="mr-auto" @click="$router.go(-1)">&lt; Go Back</button>
 
     <div
       class="bg-white rounded-md shadow p-5 overflow-hidden flex flex-col gap-4 grow"
@@ -15,13 +15,13 @@
           <DynamicFormInput
             v-for="element in formElements"
             :key="element.formDataKey"
+            v-model="formData[element.formDataKey]"
             :options="element.dynamicInputOptions"
             :errors="
               formErrors
                 .filter((e) => e.property === element.formDataKey)
                 .map((e) => e.value)
             "
-            v-model="formData[element.formDataKey]"
           />
         </div>
 

@@ -11,7 +11,7 @@
       v-if="previewStore.replyObject"
       v-bind="previewStore.replyObject"
     />
-    <AddCommentForm :feedback="feedback" v-else />
+    <AddCommentForm v-else :feedback="feedback" />
   </div>
 </template>
 

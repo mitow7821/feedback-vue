@@ -9,7 +9,7 @@
     <div>
       <span>Sort by:</span>
 
-      <select class="bg-transparent" v-model="dashboardStore.sortBy">
+      <select v-model="dashboardStore.sortBy" class="bg-transparent">
         <option :value="SortBy.UPVOTES">{{ SortBy.UPVOTES }}</option>
         <option :value="SortBy.COMMENTS">{{ SortBy.COMMENTS }}</option>
       </select>

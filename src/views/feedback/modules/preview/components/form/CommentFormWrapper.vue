@@ -8,7 +8,7 @@
       maxlength="250"
       class="bg-blue-50 rounded w-full p-3"
       :placeholder="inputPlaceholder"
-    ></textarea>
+    />
 
     <div class="flex justify-between">
       <span class="text-gray-500">{{ charsLeftSpan }}</span>
@@ -43,7 +43,7 @@ defineProps<{
   header: string;
   inputPlaceholder: string;
   buttonText: string;
-  showCancelButton?: Boolean;
+  showCancelButton?: boolean;
 }>();
 
 const comment = ref("");

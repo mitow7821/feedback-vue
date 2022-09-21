@@ -2,9 +2,9 @@
   <div class="flex flex-col gap-3">
     <FeedbackCard
       v-for="feedback in feedbacks"
+      :key="feedback.id"
       :feedback="feedback"
       :isRouterLink="true"
-      :key="feedback.id"
     />
   </div>
 </template>

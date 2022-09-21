@@ -7,8 +7,8 @@
     <div class="flex flex-col overflow-auto">
       <CommentBlock
         v-for="comment in comments"
-        class="border-b last:border-0 first:pt-0"
         :key="comment.id"
+        class="border-b last:border-0 first:pt-0"
         :comment="comment"
       />
     </div>
