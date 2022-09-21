@@ -1,5 +1,5 @@
 interface SelectOption {
-  value: any;
+  value: unknown;
   name: string;
 }
 
@@ -8,6 +8,6 @@ export interface DynamicInputInterface {
   label: string;
   description: string;
   selectOptions?: SelectOption[];
-  attrs?: Record<string, any>;
+  attrs?: Record<string, unknown>;
   isRequired?: boolean;
 }

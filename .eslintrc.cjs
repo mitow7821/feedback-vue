@@ -8,5 +8,6 @@ module.exports = {
     "@vue/eslint-config-typescript/recommended",
     "prettier",
   ],
+  plugins: ["@typescript-eslint"],
   rules: {},
 };

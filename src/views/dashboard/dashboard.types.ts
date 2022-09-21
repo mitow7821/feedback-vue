@@ -1,4 +1,3 @@
-import { FeedbackStatus } from "../../core/types/enums/feebackStatus";
 import { FeedbackCategory } from "../../core/types/feedbackCategory";
 
 type AvailableCategories = FeedbackCategory | "All";
